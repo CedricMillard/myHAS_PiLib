@@ -2,7 +2,7 @@ CC=g++
 CFLAGS = -I.
 LIBS = -lmosquitto -lmysqlclient
 DEPS = 
-ODIR=./obj
+ODIR=../build/obj
 BDIR=../build/
 
 _OBJ = myHAS_MQTTClient.o myHAS_SQLClient.o

@@ -93,6 +93,7 @@ bool myHAS_SQLClient::updateObject(string iTable, int iID, string sAttribute, st
 			if(mysql_query(pSQLCon, request2.c_str()))
 			{
 				cout<<"Failed to update table: "<<mysql_error(pSQLCon)<<endl;
+                cout<<request2<<endl;
 				return false;
 			}
 #ifdef _DEBUG_
